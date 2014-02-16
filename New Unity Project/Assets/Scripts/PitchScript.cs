@@ -6,14 +6,16 @@ public class PitchScript : MonoBehaviour {
 	public GameObject baseball;
 	private GameObject ball;
 	private Vector3 releasePos;
-	public float releaseVelocity = 44.7f;
+	public Vector3 releaseVelocity;
 	public Vector3 curve;
 
-	public enum pitchType {Fastball, Sinker, Splitter, Curveball, Slider, Screwball, changeup, forkball, cutter};
+	public enum pitchType {Fastball, Sinker, Splitter, Curveball, Slider, Screwball, Changeup, Forkball, Cutter, Slurve, Palmball, CircleChangeup};
+	public pitchType pitch;
 
 	// Use this for initialization
 	void Start () {
 		releasePos = transform.position + new Vector3(1, 0, 0);
+		pitch = pitchType.Fastball;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +24,64 @@ public class PitchScript : MonoBehaviour {
 						ball = GameObject.Instantiate (baseball, 
 			                               			   releasePos, 
 			                               			   Quaternion.identity) as GameObject;
-			ball.rigidbody.velocity = new Vector3(releaseVelocity, 0, 0); //x speed in meters per second
+
+			switch (pitch) { //right now all pitches go at their max speed 
+			case pitchType.Fastball:
+				releaseVelocity.Set(44.7f, 0, 0); // 85-100 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Sinker:
+				releaseVelocity.Set(40.23f, 5, 0); // 80-90 mph
+				curve = new Vector3(0, -0.5f, -0.5f);
+				break;
+			case pitchType.Splitter:
+				releaseVelocity.Set(40.23f, 10, 0); // 80-90 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Curveball:
+				releaseVelocity.Set(35.76f, 13, 0); // 70-80 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Slider:
+				releaseVelocity.Set(40.23f, 5, 0); // 80-90 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Screwball:
+				releaseVelocity.Set(33.53f, 12, 0); // 65-75 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Changeup:
+				releaseVelocity.Set(38.0f, 10, 0); // 70-85 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Forkball:
+				releaseVelocity.Set(38.0f, 7, 0); //75-85 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Cutter:
+				releaseVelocity.Set(42.47f, 3, 0); // 85-95 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Slurve:
+				releaseVelocity.Set(35.76f, 12, 0); // 70-80 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.Palmball:
+				releaseVelocity.Set(33.53f, 12, 0); // 65-75 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			case pitchType.CircleChangeup:
+				releaseVelocity.Set(35.76f, 12, 0); // 70-80 mph
+				curve = new Vector3(0, 0, 0);
+				break;
+			default:
+				pitch = pitchType.Fastball;
+				releaseVelocity.Set(44.7f, 0, 0);
+				curve = new Vector3(0, 0, 0);
+				break;
+			}
+
+			ball.rigidbody.velocity = releaseVelocity; //speed vector in meters per second
 			ball.rigidbody.AddTorque (curve);
 				}
 	}
