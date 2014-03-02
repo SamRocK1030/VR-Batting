@@ -13,9 +13,11 @@ public class PitchScript : MonoBehaviour {
 	public pitchType pitch;
 
 	private int mph;
+	private Transform homePlate;
 
 	// Use this for initialization
 	void Start () {
+		homePlate = GameObject.Find ("Home Plate").transform;
 		releasePos = transform.position + new Vector3(1, 0, 0);
 		pitch = pitchType.Fastball;
 	}
@@ -46,8 +48,8 @@ public class PitchScript : MonoBehaviour {
 				curve = new Vector3(0, -3, -0.5f);
 				break;
 			case pitchType.Splitter:
-				releaseVelocity.Set(40.23f, 10, 0); // 80-90 mph
-				curve = new Vector3(0, 0, 0);
+				releaseVelocity.Set(40.23f, 2, 0); // 80-90 mph
+				curve = new Vector3(0, -15, 0);
 				break;
 			case pitchType.Curveball:
 				releaseVelocity.Set(35.76f, 11, 0); // 70-80 mph
@@ -55,19 +57,19 @@ public class PitchScript : MonoBehaviour {
 				break;
 			case pitchType.Slider:
 				releaseVelocity.Set(40.23f, 5, 0); // 80-90 mph
-				curve = new Vector3(0, 0, 0);
+				curve = new Vector3(0, -2, 0.75f);
 				break;
 			case pitchType.Screwball:
 				releaseVelocity.Set(33.53f, 12, 0); // 65-75 mph
 				curve = new Vector3(0, -5, -0.5f);
 				break;
 			case pitchType.Changeup:
-				releaseVelocity.Set(38.0f, 10, 0); // 70-85 mph
+				releaseVelocity.Set(38.0f, 2, 0); // 70-85 mph
 				curve = new Vector3(0, 0, 0);
 				break;
 			case pitchType.Forkball:
-				releaseVelocity.Set(38.0f, 7, 0); //75-85 mph
-				curve = new Vector3(0, 0, 0);
+				releaseVelocity.Set(38.0f, 6, 0); //75-85 mph
+				curve = new Vector3(0, -3, 0);
 				break;
 			case pitchType.Cutter:
 				releaseVelocity.Set(42.47f, 1, 0); // 85-95 mph
@@ -78,12 +80,12 @@ public class PitchScript : MonoBehaviour {
 				curve = new Vector3(0, -5, 0.5f);
 				break;
 			case pitchType.Palmball:
-				releaseVelocity.Set(33.53f, 12, 0); // 65-75 mph
+				releaseVelocity.Set(33.53f, 2, 0); // 65-75 mph
 				curve = new Vector3(0, 0, 0);
 				break;
 			case pitchType.CircleChangeup:
-				releaseVelocity.Set(35.76f, 12, 0); // 70-80 mph
-				curve = new Vector3(0, 0, 0);
+				releaseVelocity.Set(35.76f, 2, 0); // 70-80 mph
+				curve = new Vector3(0, 0, -0.5f);
 				break;
 			default:
 				pitch = pitchType.Fastball;
@@ -106,8 +108,15 @@ public class PitchScript : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		if (ball != null)
-			ball.rigidbody.AddForce(curve);
+		if (ball != null) {
+			if ( pitch == pitchType.Splitter) {
+				//wait until close to plate to drop
+				if (Vector3.Distance(homePlate.transform.position, ball.transform.position) <= 5)
+					ball.rigidbody.AddForce (curve);
+			}
+			else // add constant drop
+				ball.rigidbody.AddForce (curve);
+		}
 	}
 
 	void OnGUI () {

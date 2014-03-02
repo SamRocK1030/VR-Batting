@@ -1,0 +1,278 @@
+fileFormatVersion: 2
+guid: 2e947e3d8152982449fefeeb1c33dbd6
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Fenway_Light1
+    100004: Fenway_Light1 1
+    100006: Fenway_Light1 2
+    100008: Fenway_Light1 3
+    100010: Fenway_Light1_1
+    100012: Fenway_Light1_1 1
+    100014: Fenway_Light1_1 2
+    100016: Fenway_Light1_1_1
+    100018: Fenway_Light1_1_1_2
+    100020: Fenway_Light1_1_2
+    100022: Fenway_Light1_1_3
+    100024: Fenway_Light1_2
+    100026: Fenway_Light1_3
+    100028: Fenway_Light1_4
+    100030: //RootNode
+    100032: Ground_Plane
+    100034: Image_Based_Light_1
+    100036: Infinite_Light_1
+    100038: mesh1
+    100040: mesh1 1
+    100042: mesh1 2
+    100044: mesh10
+    100046: mesh11
+    100048: mesh12
+    100050: mesh13
+    100052: mesh14
+    100054: mesh15
+    100056: mesh16
+    100058: mesh17
+    100060: mesh18
+    100062: mesh19
+    100064: mesh2
+    100066: mesh2 1
+    100068: mesh2 2
+    100070: mesh2 3
+    100072: mesh20
+    100074: mesh21
+    100076: mesh22
+    100078: mesh23
+    100080: mesh24
+    100082: mesh3
+    100084: mesh3 1
+    100086: mesh3 2
+    100088: mesh3 3
+    100090: mesh4
+    100092: mesh5
+    100094: mesh6
+    100096: mesh7
+    100098: mesh8
+    100100: mesh9
+    100102: Model
+    100104: ramp
+    100106: ramp 1
+    100108: ramp 2
+    100110: ramp 3
+    100112: ramp1
+    100114: ramp2
+    100116: ramp3
+    100118: ramp4
+    400000: Camera
+    400002: Fenway_Light1
+    400004: Fenway_Light1 1
+    400006: Fenway_Light1 2
+    400008: Fenway_Light1 3
+    400010: Fenway_Light1_1
+    400012: Fenway_Light1_1 1
+    400014: Fenway_Light1_1 2
+    400016: Fenway_Light1_1_1
+    400018: Fenway_Light1_1_1_2
+    400020: Fenway_Light1_1_2
+    400022: Fenway_Light1_1_3
+    400024: Fenway_Light1_2
+    400026: Fenway_Light1_3
+    400028: Fenway_Light1_4
+    400030: //RootNode
+    400032: Ground_Plane
+    400034: Image_Based_Light_1
+    400036: Infinite_Light_1
+    400038: mesh1
+    400040: mesh1 1
+    400042: mesh1 2
+    400044: mesh10
+    400046: mesh11
+    400048: mesh12
+    400050: mesh13
+    400052: mesh14
+    400054: mesh15
+    400056: mesh16
+    400058: mesh17
+    400060: mesh18
+    400062: mesh19
+    400064: mesh2
+    400066: mesh2 1
+    400068: mesh2 2
+    400070: mesh2 3
+    400072: mesh20
+    400074: mesh21
+    400076: mesh22
+    400078: mesh23
+    400080: mesh24
+    400082: mesh3
+    400084: mesh3 1
+    400086: mesh3 2
+    400088: mesh3 3
+    400090: mesh4
+    400092: mesh5
+    400094: mesh6
+    400096: mesh7
+    400098: mesh8
+    400100: mesh9
+    400102: Model
+    400104: ramp
+    400106: ramp 1
+    400108: ramp 2
+    400110: ramp 3
+    400112: ramp1
+    400114: ramp2
+    400116: ramp3
+    400118: ramp4
+    2300000: Ground_Plane
+    2300002: mesh1
+    2300004: mesh1 1
+    2300006: mesh1 2
+    2300008: mesh10
+    2300010: mesh11
+    2300012: mesh12
+    2300014: mesh13
+    2300016: mesh14
+    2300018: mesh15
+    2300020: mesh16
+    2300022: mesh17
+    2300024: mesh18
+    2300026: mesh19
+    2300028: mesh2
+    2300030: mesh2 1
+    2300032: mesh2 2
+    2300034: mesh2 3
+    2300036: mesh20
+    2300038: mesh21
+    2300040: mesh22
+    2300042: mesh23
+    2300044: mesh24
+    2300046: mesh3
+    2300048: mesh3 1
+    2300050: mesh3 2
+    2300052: mesh3 3
+    2300054: mesh4
+    2300056: mesh5
+    2300058: mesh6
+    2300060: mesh7
+    2300062: mesh8
+    2300064: mesh9
+    3300000: Ground_Plane
+    3300002: mesh1
+    3300004: mesh1 1
+    3300006: mesh1 2
+    3300008: mesh10
+    3300010: mesh11
+    3300012: mesh12
+    3300014: mesh13
+    3300016: mesh14
+    3300018: mesh15
+    3300020: mesh16
+    3300022: mesh17
+    3300024: mesh18
+    3300026: mesh19
+    3300028: mesh2
+    3300030: mesh2 1
+    3300032: mesh2 2
+    3300034: mesh2 3
+    3300036: mesh20
+    3300038: mesh21
+    3300040: mesh22
+    3300042: mesh23
+    3300044: mesh24
+    3300046: mesh3
+    3300048: mesh3 1
+    3300050: mesh3 2
+    3300052: mesh3 3
+    3300054: mesh4
+    3300056: mesh5
+    3300058: mesh6
+    3300060: mesh7
+    3300062: mesh8
+    3300064: mesh9
+    4300000: Ground_Plane
+    4300002: mesh1
+    4300004: mesh1
+    4300006: mesh1
+    4300008: mesh2
+    4300010: mesh2
+    4300012: mesh2
+    4300014: mesh2
+    4300016: mesh3
+    4300018: mesh3
+    4300020: mesh3
+    4300022: mesh3
+    4300024: mesh4
+    4300026: mesh5
+    4300028: mesh6
+    4300030: mesh7
+    4300032: mesh8
+    4300034: mesh9
+    4300036: mesh10
+    4300038: mesh11
+    4300040: mesh12
+    4300042: mesh13
+    4300044: mesh14
+    4300046: mesh15
+    4300048: mesh16
+    4300050: mesh17
+    4300052: mesh18
+    4300054: mesh19
+    4300056: mesh20
+    4300058: mesh21
+    4300060: mesh22
+    4300062: mesh23
+    4300064: mesh24
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
