@@ -7,6 +7,9 @@ public class BatScript : MonoBehaviour {
 	private Vector3 fLastVel;
 	private Collision fCollision;
 
+	public float bbcor = 0.25f; // Ball-Bat Coefficient of Restitution
+	private Vector3 bbs; //Batted Ball Speed
+
 	// Use this for initialization
 	void Start () {
 	
@@ -20,13 +23,14 @@ public class BatScript : MonoBehaviour {
 	void FixedUpdate(){
 		if (fCollided){ // if collision happened...
 			fCollided = false; // reset flag
-			// calculate acceleration due to collision
-			var acc = (rigidbody.velocity - fLastVel)/Time.fixedDeltaTime;
-			// convert to force:
-			var force = rigidbody.mass * acc;
+			// calculate speed due to collision
+			Vector3 pitchSpeed = fCollision.rigidbody.velocity;
+			Vector3 batSpeed = rigidbody.velocity;
+			bbs = bbcor *(pitchSpeed) + (1+bbcor)*(batSpeed);
+
 			// call OnAfterCollision passing the Collision 
 			// info and the reaction force:
-			OnAfterCollision(fCollision, force);
+			OnAfterCollision(fCollision, bbs);
 
 		}
 		fLastVel = rigidbody.velocity; // update last velocity
@@ -43,7 +47,8 @@ public class BatScript : MonoBehaviour {
 		//}
 	}
 
-	void  OnAfterCollision(Collision coll, Vector3 force){
-		print("Force="+force.magnitude);
+	void  OnAfterCollision(Collision coll, Vector3 speed){
+		//assign speed to ball
+		coll.rigidbody.velocity = speed;
 	}
 }
