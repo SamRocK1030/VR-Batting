@@ -46,6 +46,26 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Kinect\AvatarsDemo\PointMan\PointManController.cs" />
+     <Compile Include="Assets\Kinect\GesturesDemo\Scripts\GestureListener.cs" />
+     <Compile Include="Assets\Kinect\GesturesDemo\Scripts\PresentationScript.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\AvatarController.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Extras\LoadMainLevel.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Extras\MouseControl.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Extras\SetSceneAvatars.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Extras\SimpleGestureListener.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\BoneOrientationsConstraint.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\BoneOrientationsFilter.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\ClippedLegsFilter.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\JointPositionsFilter.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\KinectHelper.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\SelfIntersectionConstraint.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\TimedLerp.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\Filters\TrackingStateFilter.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\KinectGestures.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\KinectManager.cs" />
+     <Compile Include="Assets\Kinect\KinectScripts\KinectWrapper.cs" />
+     <Compile Include="Assets\Kinect\OverlayDemo\Scripts\KinectOverlayer.cs" />
      <Compile Include="Assets\OVR\OVRImageEffects\OVRImageEffectBase.cs" />
      <Compile Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCamera.cs" />

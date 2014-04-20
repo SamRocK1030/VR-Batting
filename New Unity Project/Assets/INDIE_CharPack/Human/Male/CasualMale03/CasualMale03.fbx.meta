@@ -83,6 +83,48 @@ ModelImporter:
     100154: LeftFingerBase
     100156: LeftHandMiddle3
     100158: LeftHandIndex2
+    100160: C3D:optical
+    100162: C3D:player_C7
+    100164: C3D:player_CLAV
+    100166: C3D:player_LANK
+    100168: C3D:player_LBHD
+    100170: C3D:player_LBWT
+    100172: C3D:player_LELB
+    100174: C3D:player_LFHD
+    100176: C3D:player_LFIN
+    100178: C3D:player_LFRM
+    100180: C3D:player_LFWT
+    100182: C3D:player_LHEE
+    100184: C3D:player_LKNE
+    100186: C3D:player_LMT5
+    100188: C3D:player_LSHN
+    100190: C3D:player_LSHO
+    100192: C3D:player_LTHI
+    100194: C3D:player_LTOE
+    100196: C3D:player_LUPA
+    100198: C3D:player_LWRA
+    100200: C3D:player_LWRB
+    100202: C3D:player_RANK
+    100204: C3D:player_RBAC
+    100206: C3D:player_RBHD
+    100208: C3D:player_RBWT
+    100210: C3D:player_RELB
+    100212: C3D:player_RFHD
+    100214: C3D:player_RFIN
+    100216: C3D:player_RFRM
+    100218: C3D:player_RFWT
+    100220: C3D:player_RHEE
+    100222: C3D:player_RKNE
+    100224: C3D:player_RMT5
+    100226: C3D:player_RSHN
+    100228: C3D:player_RSHO
+    100230: C3D:player_RTHI
+    100232: C3D:player_RTOE
+    100234: C3D:player_RUPA
+    100236: C3D:player_RWRA
+    100238: C3D:player_RWRB
+    100240: C3D:player_STRN
+    100242: C3D:player_T10
     400000: RightFoot
     400002: LeftFoot
     400004: //RootNode
@@ -163,11 +205,54 @@ ModelImporter:
     400154: LeftFingerBase
     400156: LeftHandMiddle3
     400158: LeftHandIndex2
+    400160: C3D:optical
+    400162: C3D:player_C7
+    400164: C3D:player_CLAV
+    400166: C3D:player_LANK
+    400168: C3D:player_LBHD
+    400170: C3D:player_LBWT
+    400172: C3D:player_LELB
+    400174: C3D:player_LFHD
+    400176: C3D:player_LFIN
+    400178: C3D:player_LFRM
+    400180: C3D:player_LFWT
+    400182: C3D:player_LHEE
+    400184: C3D:player_LKNE
+    400186: C3D:player_LMT5
+    400188: C3D:player_LSHN
+    400190: C3D:player_LSHO
+    400192: C3D:player_LTHI
+    400194: C3D:player_LTOE
+    400196: C3D:player_LUPA
+    400198: C3D:player_LWRA
+    400200: C3D:player_LWRB
+    400202: C3D:player_RANK
+    400204: C3D:player_RBAC
+    400206: C3D:player_RBHD
+    400208: C3D:player_RBWT
+    400210: C3D:player_RELB
+    400212: C3D:player_RFHD
+    400214: C3D:player_RFIN
+    400216: C3D:player_RFRM
+    400218: C3D:player_RFWT
+    400220: C3D:player_RHEE
+    400222: C3D:player_RKNE
+    400224: C3D:player_RMT5
+    400226: C3D:player_RSHN
+    400228: C3D:player_RSHO
+    400230: C3D:player_RTHI
+    400232: C3D:player_RTOE
+    400234: C3D:player_RUPA
+    400236: C3D:player_RWRA
+    400238: C3D:player_RWRB
+    400240: C3D:player_STRN
+    400242: C3D:player_T10
     4300000: CasualMale03
     4300002: c_L_gland
     4300004: c_L_eye
     4300006: c_R_gland
     4300008: c_R_eye
+    7400000: Take 001
     11100000: //RootNode
     13700000: c_L_eye
     13700002: c_L_gland
