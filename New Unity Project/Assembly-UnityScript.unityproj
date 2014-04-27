@@ -59,6 +59,7 @@
      <Compile Include="Assets\BaseMale\Scripts\clearText.js" />
      <Compile Include="Assets\BaseMale\Scripts\infoText.js" />
      <Compile Include="Assets\BaseMale\Scripts\shadow.js" />
+     <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />

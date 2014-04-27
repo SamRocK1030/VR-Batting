@@ -51,6 +51,7 @@ public class BatScript : MonoBehaviour {
 		fCollision = collision; // save collision data
 		fCollided = true; // signal that a collision happened
 		//collision.gameObject.rigidbody.velocity = -collision.relativeVelocity;
+
 		
 		//foreach (ContactPoint contact in collision.contacts) {
 		//	Debug.Log("contact");

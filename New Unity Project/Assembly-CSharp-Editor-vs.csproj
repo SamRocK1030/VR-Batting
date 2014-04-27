@@ -52,6 +52,7 @@
      <Compile Include="Assets\OVR\Editor\OVREditorGUIUtility.cs" />
      <Compile Include="Assets\OVR\Editor\OVRPlayerControllerEditor.cs" />
      <Compile Include="Assets\OVR\Editor\OVRPrefabs.cs" />
+     <None Include="Assets\Asset\Shaders\Normal-Diffuse.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection_CA.shader" />
      <None Include="Assets\OVR\OVRImageEffects\OVRLensCorrection.shader" />
      <None Include="Assets\OVR\Shaders\OVRGUIShader.shader" />
